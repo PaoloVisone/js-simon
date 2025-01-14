@@ -11,8 +11,8 @@ countDown = setInterval(() => {
 
     if (second === 0) {
         clearInterval(countDown);
-        ////////////////////////////
-        ////////////////////////////
+        numberList.className = "d-none";
+        numberCountdown.className = "d-none"
     } else {
         second = second - 1;
         numberCountdown.innerHTML = second;
@@ -45,5 +45,6 @@ for (let i = 0; i < randomNumber.length; i++) {
 // Li stampo in html
 numberList.innerHTML = items;
 
+// I numeri scompaiono
 
 
